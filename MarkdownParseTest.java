@@ -1,4 +1,6 @@
 import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.junit.*;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -29,6 +31,11 @@ public class MarkdownParseTest {
             String file = load("markdown" + (i + 1) + ".md");
             assertEquals(list[i],MarkdownParse.getLinks(file));
         }
+    }
+
+    @Test
+    public void fail() {
+        assertEquals(1, 1+1);
     }
 
     private String load(String words) throws IOException {
