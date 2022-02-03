@@ -33,6 +33,11 @@ public class MarkdownParseTest {
         }
     }
 
+    @Test
+    public void fail() {
+        assertEquals(0, 1 + 1);
+    }
+
     private String load(String words) throws IOException {
 		Path fileName = Path.of(words);
 	    String contents = Files.readString(fileName);
