@@ -20,6 +20,9 @@ public class MarkdownParseTest {
         list[1] = new ArrayList();
         list[2] = new ArrayList();
         list[3] = new ArrayList();
+        list[4] = new ArrayList();
+        list[5] = new ArrayList();
+        list[6] = new ArrayList();
         list[7] = new ArrayList();
         list[0].add("http://something.com");
         list[0].add("http://somemorething.com");
